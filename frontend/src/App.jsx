@@ -36,7 +36,7 @@ function App() {
       formData.append("jobDescription", jobDescription);
 
       const response = await axios.post(
-        "http://localhost:5050/api/match",
+        "https://resume-matcher-vy07.onrender.com/api/match",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
